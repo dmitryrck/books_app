@@ -23,4 +23,8 @@ describe Book do
     subject.isbn = nil
     expect(subject).not_to be_valid
   end
+
+  it 'generate to_s' do
+    expect(subject.to_s).to eq 'I am Iron Man'
+  end
 end
