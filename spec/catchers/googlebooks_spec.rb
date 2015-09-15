@@ -22,4 +22,3 @@ describe 'GoogleBooks' do
     end
   end
 end
-
