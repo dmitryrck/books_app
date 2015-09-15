@@ -1,0 +1,148 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?country=&maxResults=5&q=isbn:9781118084786&startIndex=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 15 Sep 2015 21:17:10 GMT
+      Date:
+      - Tue, 15 Sep 2015 21:17:10 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"AEqHJ39cYOcHij976IZqD9LCWzE/BS0L1_evMQZoLCFWDfJmvmKyqq4"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '3006'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; p="1"; ma=604800
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 1,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "CHx7Cb9a32cC",
+           "etag": "Q0DjkhnSUfE",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/CHx7Cb9a32cC",
+           "volumeInfo": {
+            "title": "Ruby on Rails For Dummies",
+            "authors": [
+             "Barry Burd"
+            ],
+            "publisher": "John Wiley & Sons",
+            "publishedDate": "2011-05-09",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781118084786"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1118084780"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 330,
+            "printType": "BOOK",
+            "categories": [
+             "Computers"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "2.4.2.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com.br/books/content?id=CHx7Cb9a32cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com.br/books/content?id=CHx7Cb9a32cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com.br/books?id=CHx7Cb9a32cC&printsec=frontcover&dq=isbn:9781118084786&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com.br/books?id=CHx7Cb9a32cC&dq=isbn:9781118084786&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com.br/books/about/Ruby_on_Rails_For_Dummies.html?hl=&id=CHx7Cb9a32cC"
+           },
+           "saleInfo": {
+            "country": "BR",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 45.5,
+             "currencyCode": "BRL"
+            },
+            "retailPrice": {
+             "amount": 45.5,
+             "currencyCode": "BRL"
+            },
+            "buyLink": "http://books.google.com.br/books?id=CHx7Cb9a32cC&dq=isbn:9781118084786&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 4.55E7,
+               "currencyCode": "BRL"
+              },
+              "retailPrice": {
+               "amountInMicros": 4.55E7,
+               "currencyCode": "BRL"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "BR",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com.br/books/download/Ruby_on_Rails_For_Dummies-sample-epub.acsm?id=CHx7Cb9a32cC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com.br/books/download/Ruby_on_Rails_For_Dummies-sample-pdf.acsm?id=CHx7Cb9a32cC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com.br/books/reader?id=CHx7Cb9a32cC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Tue, 15 Sep 2015 21:17:21 GMT
+recorded_with: VCR 2.9.3

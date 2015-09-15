@@ -21,6 +21,8 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 source 'https://rails-assets.org' do

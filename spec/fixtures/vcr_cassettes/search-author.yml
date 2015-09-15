@@ -1,0 +1,412 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?country=&maxResults=5&q=inauthor:Tanenbaum&startIndex=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 15 Sep 2015 21:17:16 GMT
+      Date:
+      - Tue, 15 Sep 2015 21:17:16 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"AEqHJ39cYOcHij976IZqD9LCWzE/1AGcyeHw0mi_j7db80tfWqcdoWs"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '13053'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; p="1"; ma=604800
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 356,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "0tjB8FbV590C",
+           "etag": "RAlhex+Cnss",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/0tjB8FbV590C",
+           "volumeInfo": {
+            "title": "Redes de computadores",
+            "authors": [
+             "Andrew S. Tanenbaum"
+            ],
+            "publisher": "Elsevier Brasil",
+            "publishedDate": "2003",
+            "description": "'Redes de computadores' foi atualizado para refletir as tecnologias mais novas e mais importantes de redes, com ênfase especial em redes sem fio, incluindo 802.11, Bluetooth, comunicação sem fio de banda larga, redes ad hoc, i-mode e WAP. Porém, as redes fixas não foram ignoradas com cobertura de ADSL, Internet via cabo, Ethernet de gigabit, redes não-hierárquicas, NAT e MPLS.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "8535211853"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9788535211856"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 945,
+            "printType": "BOOK",
+            "averageRating": 4.5,
+            "ratingsCount": 5,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "1.1.1.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com.br/books/content?id=0tjB8FbV590C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com.br/books/content?id=0tjB8FbV590C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "pt",
+            "previewLink": "http://books.google.com.br/books?id=0tjB8FbV590C&printsec=frontcover&dq=inauthor:Tanenbaum&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com.br/books?id=0tjB8FbV590C&dq=inauthor:Tanenbaum&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com.br/books/about/Redes_de_computadores.html?hl=&id=0tjB8FbV590C"
+           },
+           "saleInfo": {
+            "country": "BR",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "BR",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com.br/books/reader?id=0tjB8FbV590C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "&#39;Redes de computadores&#39; foi atualizado para refletir as tecnologias mais novas e mais importantes de redes, com ênfase especial em redes sem fio, incluindo 802.11, Bluetooth, comunicação sem fio de banda larga, redes ad hoc, i-mode e WAP ..."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "Z5sCbDRUBaQC",
+           "etag": "S8C/+Kivqqc",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/Z5sCbDRUBaQC",
+           "volumeInfo": {
+            "title": "Sistemas Operacionais: Projetjos e Implementação",
+            "authors": [
+             "Andrew S. Tanenbaum",
+             "Albert S. Woodhull"
+            ],
+            "publisher": "Bookman Editora",
+            "publishedDate": "2009-01-01",
+            "description": "Ao associar as ciências básicas a exemplos de aplicações clínicas, esta 2ª edição de Fisiologia gastrintestinal auxiliará na compreensão da fisiologia e de suas relações com a anatomia, a fisiopatologia e a terapêutica. Para tanto, combina a pesquisa mais atual com uma abordagem de aprendizado integrada, por sistemas de órgãos.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9788577802852"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "857780285X"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "printType": "BOOK",
+            "categories": [
+             "Computers"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.48.0.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com.br/books/content?id=Z5sCbDRUBaQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com.br/books/content?id=Z5sCbDRUBaQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "pt",
+            "previewLink": "http://books.google.com.br/books?id=Z5sCbDRUBaQC&printsec=frontcover&dq=inauthor:Tanenbaum&hl=&cd=2&source=gbs_api",
+            "infoLink": "http://books.google.com.br/books?id=Z5sCbDRUBaQC&dq=inauthor:Tanenbaum&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com.br/books/about/Sistemas_Operacionais_Projetjos_e_Implem.html?hl=&id=Z5sCbDRUBaQC"
+           },
+           "saleInfo": {
+            "country": "BR",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 176.0,
+             "currencyCode": "BRL"
+            },
+            "retailPrice": {
+             "amount": 176.0,
+             "currencyCode": "BRL"
+            },
+            "buyLink": "http://books.google.com.br/books?id=Z5sCbDRUBaQC&dq=inauthor:Tanenbaum&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 1.76E8,
+               "currencyCode": "BRL"
+              },
+              "retailPrice": {
+               "amountInMicros": 1.76E8,
+               "currencyCode": "BRL"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "BR",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com.br/books/download/Sistemas_Operacionais_Projetjos_e_Implem-sample-pdf.acsm?id=Z5sCbDRUBaQC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com.br/books/reader?id=Z5sCbDRUBaQC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Ao associar as ciências básicas a exemplos de aplicações clínicas, esta 2ª edição de Fisiologia gastrintestinal auxiliará na compreensão da fisiologia e de suas relações com a anatomia, a fisiopatologia e a terapêutica."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "o08FskbdjDUC",
+           "etag": "IBJA/e/CKos",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/o08FskbdjDUC",
+           "volumeInfo": {
+            "title": "The Cheapskate's Guide to Cruises",
+            "subtitle": "The Very Best Trips for the Lowest Cost",
+            "authors": [
+             "Stephen Tanenbaum",
+             "Patty Tanenbaum"
+            ],
+            "publisher": "Citadel Press",
+            "publishedDate": "1999-01",
+            "description": "Offers money-saving suggestions for planning a cruise vacation, profiles major cruise lines, and describes alternate cruising options",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0806520442"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780806520445"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 335,
+            "printType": "BOOK",
+            "categories": [
+             "Travel"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.2.0.0.preview.0",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com.br/books/content?id=o08FskbdjDUC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+             "thumbnail": "http://books.google.com.br/books/content?id=o08FskbdjDUC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com.br/books?id=o08FskbdjDUC&dq=inauthor:Tanenbaum&hl=&cd=3&source=gbs_api",
+            "infoLink": "http://books.google.com.br/books?id=o08FskbdjDUC&dq=inauthor:Tanenbaum&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com.br/books/about/The_Cheapskate_s_Guide_to_Cruises.html?hl=&id=o08FskbdjDUC"
+           },
+           "saleInfo": {
+            "country": "BR",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "BR",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com.br/books/reader?id=o08FskbdjDUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Offers money-saving suggestions for planning a cruise vacation, profiles major cruise lines, and describes alternate cruising options"
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "meCAGQAACAAJ",
+           "etag": "+cwsSRTgcm4",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/meCAGQAACAAJ",
+           "volumeInfo": {
+            "title": "Sistemas operacionais modernos",
+            "authors": [
+             "Andrew S. Tanenbaum"
+            ],
+            "publishedDate": "2003",
+            "description": "Como tudo o que se refere a computadores, os sistemas operacionais evoluem a passos largos. É essa evolução que abre caminho para aplicativos mais poderoso e tem aumentado dia a dia a presença de computadores em nossas vidas. Este livro pretende ajudar o leitor entender desde a história e os fundamentos dos sistemas operacionais até os avanços tecnológicos na área. Segurança de computadores, sistemas operacionais multimídia e projeto de sistemas operacionais são alguns dos temas apresentados. O livro tembém descreve os principais sistemas operacionais em uso, entre os quais o Linux, o Unix e o Windows.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "8587918575"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9788587918574"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 695,
+            "printType": "BOOK",
+            "averageRating": 3.5,
+            "ratingsCount": 2,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "language": "pt",
+            "previewLink": "http://books.google.com.br/books?id=meCAGQAACAAJ&dq=inauthor:Tanenbaum&hl=&cd=4&source=gbs_api",
+            "infoLink": "http://books.google.com.br/books?id=meCAGQAACAAJ&dq=inauthor:Tanenbaum&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com.br/books/about/Sistemas_operacionais_modernos.html?hl=&id=meCAGQAACAAJ"
+           },
+           "saleInfo": {
+            "country": "BR",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "BR",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com.br/books/reader?id=meCAGQAACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Como tudo o que se refere a computadores, os sistemas operacionais evoluem a passos largos. É essa evolução que abre caminho para aplicativos mais poderoso e tem aumentado dia a dia a presença de computadores em nossas vidas."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "r2SGPgAACAAJ",
+           "etag": "o8YR97mm4/I",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/r2SGPgAACAAJ",
+           "volumeInfo": {
+            "title": "Sistemas distribuídos",
+            "subtitle": "princípios e paradgmas",
+            "authors": [
+             "Andrew S. Tanenbaum",
+             "Maarten van Steen"
+            ],
+            "publishedDate": "2007",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "8576051427"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9788576051428"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 402,
+            "printType": "BOOK",
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "language": "en",
+            "previewLink": "http://books.google.com.br/books?id=r2SGPgAACAAJ&dq=inauthor:Tanenbaum&hl=&cd=5&source=gbs_api",
+            "infoLink": "http://books.google.com.br/books?id=r2SGPgAACAAJ&dq=inauthor:Tanenbaum&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com.br/books/about/Sistemas_distribu%C3%ADdos.html?hl=&id=r2SGPgAACAAJ"
+           },
+           "saleInfo": {
+            "country": "BR",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "BR",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com.br/books/reader?id=r2SGPgAACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Tue, 15 Sep 2015 21:17:27 GMT
+recorded_with: VCR 2.9.3
