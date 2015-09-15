@@ -1,5 +1,15 @@
-<% @books.each do |book| %>
-  <li>
-    <%= book %> by <%= book.authors %>
-  </li>
-<% end %>
+<div class="jumbotron">
+  <h1>Books App</h1>
+  <p class="lead">"Busquem conhecimento", Bilu, Et.</p>
+</div>
+
+<div class="row marketing">
+  <% @books.in_groups_of(3).each do |books| %>
+    <% books.reject(&:nil?).each do |book| %>
+      <div class="col-lg-6">
+        <h4><%= book %></h4>
+        <p><%= book.authors %>.</p>
+      </div>
+    <% end %>
+  <% end %>
+</div>
