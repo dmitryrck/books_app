@@ -21,3 +21,9 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    attributes:
+      book:
+        isbn: "ISBN"
+        title: "Title"
+        authors: "Author(s)"

@@ -10,6 +10,8 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 
 gem 'googlebooks'
+gem 'responders'
+gem 'simple_form'
 
 group :development do
   gem 'ffaker'
