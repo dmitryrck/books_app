@@ -1,0 +1,132 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?country=&maxResults=5&q=isbn:1937785491&startIndex=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 20 Sep 2015 11:54:31 GMT
+      Date:
+      - Sun, 20 Sep 2015 11:54:31 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"AEqHJ39cYOcHij976IZqD9LCWzE/GHgfnhynSHoORfl_G5xrOqlfH6U"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '3781'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; p="1"; ma=604800
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 1,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "2LulngEACAAJ",
+           "etag": "xLTzBlcw8lM",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/2LulngEACAAJ",
+           "volumeInfo": {
+            "title": "Programming Ruby 1.9 & 2.0",
+            "subtitle": "The Pragmatic Programmers' Guide",
+            "authors": [
+             "David Thomas",
+             "Chad Fowler",
+             "Andrew Hunt"
+            ],
+            "publishedDate": "2013",
+            "description": "Summary: Ruby 1.9 was a major release of the language: it introduced multinationalization, new block syntax and scoping rules, a new, faster, virtual machine, and hundreds of new methods in dozens of new classes and modules. Ruby 2.0 is less radical--it has keyword arguments, a new regexp engine, and some library changes. This book describes it all. The first quarter of the book is a tutorial introduction that gets you up to speed with the Ruby language and the most important classes and libraries. Download and play with the hundreds of code samples as your experiment with the language. The second section looks at real-world Ruby, covering the Ruby environment, how to package, document, and distribute code, and how to work with encodings. The third part of the book is more advanced. In it, you'll find a full description of the language, an explanation of duck typing, and a detailed description of the Ruby object model and metaprogramming. The book ends with a reference section: comprehensive and detailed documentation of Ruby's libraries. You'll find descriptions and examples of more than 1,300 methods in 58 built-in classes and modules, along with brief descriptions of 97 standard libraries. Ruby makes your programming more productive; it makes coding fun again. And this book will get you up to speed with the very latest Ruby, quickly and enjoyably.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "1937785491"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9781937785499"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 863,
+            "printType": "BOOK",
+            "categories": [
+             "Computers"
+            ],
+            "averageRating": 4.0,
+            "ratingsCount": 34,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com.br/books/content?id=2LulngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+             "thumbnail": "http://books.google.com.br/books/content?id=2LulngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com.br/books?id=2LulngEACAAJ&dq=isbn:1937785491&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com.br/books?id=2LulngEACAAJ&dq=isbn:1937785491&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com.br/books/about/Programming_Ruby_1_9_2_0.html?hl=&id=2LulngEACAAJ"
+           },
+           "saleInfo": {
+            "country": "BR",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "BR",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com.br/books/reader?id=2LulngEACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "This book describes it all. The first quarter of the book is a tutorial introduction that gets you up to speed with the Ruby language and the most important classes and libraries."
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sun, 20 Sep 2015 11:54:43 GMT
+recorded_with: VCR 2.9.3

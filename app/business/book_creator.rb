@@ -1,27 +1,44 @@
 class BookCreator
-  class << self
-    def create_by_isbn(isbn)
-      Book.create catch_the_book_by_isbn(isbn)
+  attr_reader :isbn
+
+  delegate :title, :authors, :year_published, :persisted?, :save, to: :book, allow_nil: true
+
+  def initialize(isbn)
+    @isbn = isbn
+  end
+
+  def self.create(isbn)
+    creator = new(isbn)
+    creator.get_attributes
+    creator.save
+    creator.book
+  end
+
+  def get_attributes
+    book.attributes = data_hash(GooglebookCatcher.new(isbn).catch)
+  end
+
+  def save
+    book.save
+  end
+
+  def book
+    @book ||= Book.new isbn: @isbn
+  end
+
+  private
+
+  def data_hash(object)
+    result = {}
+
+    case object
+    when GoogleBooks::Item then
+      result[:title]          = object.title
+      result[:authors]        = object.authors
+      result[:isbn]           = object.isbn
+      result[:year_published] = object.published_date.split('-')[0]
     end
 
-    private
-
-    def catch_the_book_by_isbn(isbn)
-      data_hash Catchers::GoogleBook.new(isbn).catch
-    end
-
-    def data_hash(object)
-      result = {}
-
-      case object
-      when GoogleBooks::Item then
-        result[:title]          = object.title
-        result[:authors]        = object.authors
-        result[:isbn]           = object.isbn
-        result[:year_published] = Date.parse(object.published_date).try(:year) rescue nil
-      end
-
-      result
-    end
+    result
   end
 end

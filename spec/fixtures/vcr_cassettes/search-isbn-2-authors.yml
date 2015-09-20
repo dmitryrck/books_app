@@ -1,0 +1,153 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?country=&maxResults=5&q=isbn:0387493336&startIndex=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 20 Sep 2015 11:48:45 GMT
+      Date:
+      - Sun, 20 Sep 2015 11:48:45 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"AEqHJ39cYOcHij976IZqD9LCWzE/wRd9ALwQBaNtNhWJnh5UfSSatwI"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '4871'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; p="1"; ma=604800
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 1,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "g9_iebhkbNcC",
+           "etag": "XQ41kybiWBM",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/g9_iebhkbNcC",
+           "volumeInfo": {
+            "title": "Computer Algebra Recipes",
+            "subtitle": "An Advanced Guide to Scientific Modeling",
+            "authors": [
+             "Richard H. Enns",
+             "George C. McGuire"
+            ],
+            "publisher": "Springer Science & Business Media",
+            "publishedDate": "2007-12-31",
+            "description": "Modern computer algebra systems are revolutionizing the teaching and learning of mathematically intensive subjects in science and engineering, enabling students to explore increasingly complex and computationally intensive models that provide analytic solutions, animated numerical solutions, and complex two- and three-dimensional graphic displays.This self-contained text benefits from a spiral structure that regularly revisits the general topics of graphics, symbolic computation, and numerical simulation with increasing intricacy at each turn. The text is built around a large number of computer algebra worksheets or 'recipes' that have been designed using MAPLE to provide tools for problem solving and to stimulate critical thinking. No prior knowledge of MAPLE is assumed. All relevant commands are introduced on a need-to-know basis and are indexed for easy reference. Each recipe is associated with a scientific model or method and an interesting or amusing story designed to both entertain and enhance concept comprehension and retention. Aimed at third- and fourth-year undergraduates in science and engineering, the text contains numerous examples in disciplines that will challenge students progressing in mathematics, physics, engineering, game theory, and physical chemistry. Computer Algebra Recipes: An Advanced Guide to Mathematical Modeling can serve as an effective computational science text, with a set of problems following each section of recipes to enable readers to apply and confirm their understanding. The book may also be used as a reference, for self-study, or as the basis of an on-line course.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0387493336"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780387493336"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 384,
+            "printType": "BOOK",
+            "categories": [
+             "Mathematics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "4.6.2.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com.br/books/content?id=g9_iebhkbNcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com.br/books/content?id=g9_iebhkbNcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com.br/books?id=g9_iebhkbNcC&printsec=frontcover&dq=isbn:0387493336&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com.br/books?id=g9_iebhkbNcC&dq=isbn:0387493336&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com.br/books/about/Computer_Algebra_Recipes.html?hl=&id=g9_iebhkbNcC"
+           },
+           "saleInfo": {
+            "country": "BR",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 208.93,
+             "currencyCode": "BRL"
+            },
+            "retailPrice": {
+             "amount": 208.93,
+             "currencyCode": "BRL"
+            },
+            "buyLink": "http://books.google.com.br/books?id=g9_iebhkbNcC&dq=isbn:0387493336&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 2.0893E8,
+               "currencyCode": "BRL"
+              },
+              "retailPrice": {
+               "amountInMicros": 2.0893E8,
+               "currencyCode": "BRL"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "BR",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com.br/books/download/Computer_Algebra_Recipes-sample-pdf.acsm?id=g9_iebhkbNcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com.br/books/reader?id=g9_iebhkbNcC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Modern computer algebra systems are revolutionizing the teaching and learning of mathematically intensive subjects in science and engineering, enabling students to explore increasingly complex and computationally intensive models that ..."
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sun, 20 Sep 2015 11:48:57 GMT
+recorded_with: VCR 2.9.3

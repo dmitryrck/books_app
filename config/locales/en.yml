@@ -27,3 +27,7 @@ en:
         isbn: "ISBN"
         title: "Title"
         authors: "Author(s)"
+  simple_form:
+    hints:
+      book:
+        authors: "Example: First Last, Other Name"

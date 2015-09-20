@@ -4,6 +4,6 @@ require 'ffaker'
   Book.create(
     isbn: rand(9999999999).to_s,
     title: FFaker::Lorem.phrase,
-    authors: "#{FFaker::Name.last_name}, #{FFaker::Name.first_name}"
+    authors: "#{FFaker::Name.first_name} #{FFaker::Name.last_name}"
   )
 end
