@@ -4,13 +4,19 @@
 </div>
 
 <div class="row marketing">
-  <% @books.in_groups_of(2).each do |books| %>
-    <% books.reject(&:nil?).each do |book| %>
-      <div class="col-lg-6">
-        <%= image_tag 'http://placehold.it/115x180.png', alt: book %>
-        <h4><%= book %></h4>
-        <p><%= book.authors %>.</p>
-      </div>
-    <% end %>
+  <% @books.in_groups_of(3).each do |books| %>
+    <div class="row">
+      <% books.reject(&:nil?).each do |book| %>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <%= image_tag 'http://placehold.it/115x180.png', alt: book %>
+            <div class="caption">
+              <h3><%= book %></h3>
+              <p><%= book.authors %>.</p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   <% end %>
 </div>
