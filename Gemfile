@@ -6,6 +6,7 @@ gem 'googlebooks'
 gem 'responders'
 gem 'simple_form'
 gem 'sqlite3'
+gem 'sidekiq'
 
 gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'

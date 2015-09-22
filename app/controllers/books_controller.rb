@@ -8,9 +8,14 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book = Book.new book_params
-    @book.save
-    respond_with @book, location: books_path
+    if book_params[:isbn].present? && book_params[:title].blank? && book_params[:authors].blank?
+      BookCreatorWorker.perform_async(book_params[:isbn])
+      redirect_to books_path
+    else
+      @book = Book.new book_params
+      @book.save
+      respond_with @book, location: books_path
+    end
   end
 
   protected
