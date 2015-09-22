@@ -39,6 +39,10 @@ describe BookCreator do
     it 'with correct published year' do
       expect(subject.year_published).to eq 2011
     end
+
+    it 'with correct image link' do
+      expect(subject.image_link).to eq 'http://books.google.com.br/books/content?id=CHx7Cb9a32cC&printsec=frontcover&img=1&zoom=1&edge=none&source=gbs_api'
+    end
   end
 
   context 'create a book by isbn with two authors' do
@@ -75,6 +79,10 @@ describe BookCreator do
     it 'with correct published year' do
       expect(subject.year_published).to eq 2007
     end
+
+    it 'with correct image link' do
+      expect(subject.image_link).to eq 'http://books.google.com.br/books/content?id=g9_iebhkbNcC&printsec=frontcover&img=1&zoom=1&edge=none&source=gbs_api'
+    end
   end
 
   context 'create a book by isbn with year only in search results' do
@@ -110,6 +118,10 @@ describe BookCreator do
 
     it 'with correct published year' do
       expect(subject.year_published).to eq 2013
+    end
+
+    it 'with correct image link' do
+      expect(subject.image_link).to eq 'http://books.google.com.br/books/content?id=2LulngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'
     end
   end
 end

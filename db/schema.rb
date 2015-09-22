@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150913175246) do
+ActiveRecord::Schema.define(version: 20150922013058) do
 
   create_table "books", force: :cascade do |t|
     t.string  "title"
     t.string  "authors"
     t.string  "isbn"
     t.integer "year_published"
+    t.string  "image_link"
   end
 
 end

@@ -9,7 +9,7 @@
       <% books.reject(&:nil?).each do |book| %>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <%= image_tag 'http://placehold.it/115x180.png', alt: book %>
+            <%= book_image_tag book %>
             <div class="caption">
               <h3><%= book %></h3>
               <p><%= book.authors %>.</p>

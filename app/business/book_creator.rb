@@ -1,7 +1,8 @@
 class BookCreator
   attr_reader :isbn
 
-  delegate :title, :authors, :year_published, :persisted?, :save, to: :book, allow_nil: true
+  delegate :title, :authors, :year_published, :image_link, :persisted?, :save,
+    to: :book, allow_nil: true
 
   def initialize(isbn)
     @isbn = isbn
@@ -34,6 +35,7 @@ class BookCreator
     case object
     when GoogleBooks::Item then
       result[:title]          = object.title
+      result[:image_link]     = object.image_link
       result[:authors]        = object.authors
       result[:isbn]           = object.isbn
       result[:year_published] = object.published_date.split('-')[0]
