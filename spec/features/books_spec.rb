@@ -24,10 +24,13 @@ describe 'Books' do
       fill_in 'ISBN', with: '9781118084786'
       fill_in 'Title', with: 'Ruby on Rails For Dummies'
       fill_in 'Author(s)', with: 'Barry Burd'
+      fill_in 'Quantity', with: '10'
 
       click_on 'Criar'
 
       expect(page).to have_content 'Ruby on Rails For Dummies'
+
+      expect(Book.last.quantity).to eq 10
     end
 
     it 'should be able to create only with isbn' do
@@ -42,6 +45,8 @@ describe 'Books' do
         click_on 'Criar'
 
         expect(page).to have_content 'Ruby on Rails For Dummies'
+
+        expect(Book.last.quantity).to eq 0
       end
     end
   end
