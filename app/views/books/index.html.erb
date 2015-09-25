@@ -12,7 +12,7 @@
       <% books.reject(&:nil?).each do |book| %>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <%= book_image_tag book %>
+            <%= image_tag book_image_url(book), alt: book %>
             <div class="caption">
               <h3><%= book %></h3>
               <p><%= book.authors %>.</p>
