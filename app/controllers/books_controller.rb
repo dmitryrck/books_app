@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+  before_filter :authenticate, only: [:new, :create]
+
   def index
     @books = Book.ordered
   end
