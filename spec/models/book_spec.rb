@@ -27,4 +27,10 @@ describe Book do
   it 'generate to_s' do
     expect(subject.to_s).to eq 'I am Iron Man'
   end
+
+  it 'should not be valid with duplicated isbn' do
+    subject.save
+    book = Book.new(isbn: subject.isbn, title: 'Other title', authors: 'Other Author')
+    expect(book).not_to be_valid
+  end
 end
