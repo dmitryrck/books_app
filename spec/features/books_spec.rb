@@ -41,12 +41,13 @@ describe 'Books' do
         click_on 'Adicionar livro'
 
         fill_in 'ISBN', with: '9781118084786'
+        fill_in 'Quantity', with: '20'
 
         click_on 'Criar'
 
         expect(page).to have_content 'Ruby on Rails For Dummies'
 
-        expect(Book.last.quantity).to eq 0
+        expect(Book.last.quantity).to eq 20
       end
     end
   end

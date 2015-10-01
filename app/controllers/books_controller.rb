@@ -11,7 +11,7 @@ class BooksController < ApplicationController
 
   def create
     if book_params[:isbn].present? && book_params[:title].blank? && book_params[:authors].blank?
-      BookCreatorWorker.perform_async(book_params[:isbn])
+      BookCreatorWorker.perform_async(book_params[:isbn], book_params[:quantity])
       redirect_to books_path
     else
       @book = Book.new book_params
