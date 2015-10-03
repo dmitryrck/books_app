@@ -18,16 +18,5 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   hello: "Hello world"
-  activerecord:
-    attributes:
-      book:
-        isbn: "ISBN"
-        title: "Title"
-        authors: "Author(s)"
-  simple_form:
-    hints:
-      book:
-        authors: "Example: First Last, Other Name"
