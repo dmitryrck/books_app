@@ -1,0 +1,12 @@
+pt-BR:
+  simple_form:
+    labels:
+      book:
+        isbn: "ISBN"
+        title: "Título"
+        authors: "Autor(es)"
+        quantity: "Quantidade"
+
+    hints:
+      book:
+        authors_html: "Exemplo (dois autores): <em>Alexandre Aquiles, Rodrigo Ferreira</em>"

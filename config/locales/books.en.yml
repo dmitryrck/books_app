@@ -1,0 +1,12 @@
+en:
+  simple_form:
+    labels:
+      book:
+        isbn: "ISBN"
+        title: "Title"
+        authors: "Author(s)"
+        quantity: "Quantity"
+
+    hints:
+      book:
+        authors_html: "Example (two authors): <em>Venkat Subramaniam, Andy Hunt</em>"
