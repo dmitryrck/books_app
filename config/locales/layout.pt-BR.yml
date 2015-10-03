@@ -1,0 +1,4 @@
+pt-BR:
+  layouts:
+    application:
+      add_book: 'Adicionar livro'

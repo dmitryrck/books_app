@@ -22,9 +22,9 @@ describe 'Books' do
       click_on 'Adicionar livro'
 
       fill_in 'ISBN', with: '9781118084786'
-      fill_in 'Title', with: 'Ruby on Rails For Dummies'
-      fill_in 'Author(s)', with: 'Barry Burd'
-      fill_in 'Quantity', with: '10'
+      fill_in 'Título', with: 'Ruby on Rails For Dummies'
+      fill_in 'Autor(es)', with: 'Barry Burd'
+      fill_in 'Quantidade', with: '10'
 
       click_on 'Criar'
 
@@ -41,7 +41,7 @@ describe 'Books' do
         click_on 'Adicionar livro'
 
         fill_in 'ISBN', with: '9781118084786'
-        fill_in 'Quantity', with: '20'
+        fill_in 'Quantidade', with: '20'
 
         click_on 'Criar'
 
