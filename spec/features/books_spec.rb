@@ -51,4 +51,25 @@ describe 'Books' do
       end
     end
   end
+
+  context 'edit' do
+    it 'should update' do
+      book = Book.create!(
+        isbn: '0345453743',
+        title: "The Ultimate Hitchhiker's Guide to the Galaxy",
+        authors: 'Douglas Adams'
+      )
+
+      visit edit_book_path(book)
+
+      fill_in 'ISBN', with: 'B00FY8UDSM'
+      fill_in 'Title', with: 'Memórias Póstumas de Brás Cubas'
+      fill_in 'Author(s)', with: 'Machado de Assis'
+
+      click_on 'Atualizar'
+
+      expect(page).to have_content 'Memórias Póstumas de Brás Cubas'
+      expect(page).to have_content 'Machado de Assis'
+    end
+  end
 end

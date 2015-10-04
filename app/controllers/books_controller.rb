@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
-  before_filter :authenticate, only: [:new, :create]
+  before_filter :authenticate, except: [:index]
+  before_filter :set_book, only: [:edit, :update]
 
   def index
     @books = Book.ordered
@@ -20,7 +21,16 @@ class BooksController < ApplicationController
     end
   end
 
+  def update
+    @book.update(book_params)
+    respond_with @book, location: books_path
+  end
+
   protected
+
+  def set_book
+    @book = Book.find(params[:id])
+  end
 
   def book_params
     params
