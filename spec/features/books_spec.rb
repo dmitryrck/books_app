@@ -50,6 +50,25 @@ describe 'Books' do
         expect(Book.last.quantity).to eq 20
       end
     end
+
+    it 'should not be able to create with duplicated ISBN' do
+      Sidekiq::Testing.inline!
+      VCR.use_cassette('search-isbn') do
+        visit '/'
+        click_on 'Adicionar livro'
+        fill_in 'ISBN', with: '9781118084786'
+        click_on 'Criar'
+        expect(page).to have_content 'Ruby on Rails For Dummies'
+      end
+
+      VCR.use_cassette('search-isbn') do
+        visit '/'
+        click_on 'Adicionar livro'
+        fill_in 'ISBN', with: '9781118084786'
+        click_on 'Criar'
+        expect(page).to have_css('div.caption', count: 1)
+      end
+    end
   end
 
   context 'edit' do
