@@ -38,7 +38,9 @@ class BookCreator
       result[:image_link]     = object.image_link
       result[:authors]        = object.authors
       result[:isbn]           = object.isbn
-      result[:year_published] = object.published_date.split('-')[0]
+      if object.published_date.present?
+        result[:year_published] = object.published_date.split('-')[0]
+      end
     end
 
     result

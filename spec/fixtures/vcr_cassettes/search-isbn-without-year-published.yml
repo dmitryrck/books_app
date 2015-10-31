@@ -1,0 +1,123 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?country=&maxResults=5&q=isbn:9788575222614&startIndex=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sat, 31 Oct 2015 14:13:45 GMT
+      Date:
+      - Sat, 31 Oct 2015 14:13:45 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"Jnzak1xZdGoVKFVX8mD0uKAbK4A/u9CID5w0pXAA0hmpp-BNiuJxT5Q"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '3421'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; p="1"; ma=604800
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 1,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "ihbmXwAACAAJ",
+           "etag": "JgdAxYcgmLw",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/ihbmXwAACAAJ",
+           "volumeInfo": {
+            "title": "HTML5 - A Linguagem de Marcação que Revolucionou a Web",
+            "authors": [
+             "Maurício Samy Silva"
+            ],
+            "publisher": "Novatec Editora",
+            "description": "HTML5 é a linguagem de marcação que amplia de forma surpreendente as funcionalidades da HTML, alterando de maneira significativa como você desenvolve para a web. Trata-se da mais extensa especificação para a HTML focada em criar funcionalidades para desenvolvimento não só de sites, mas também de aplicações de internet rica (RIA). Maujor aborda as funcionalidades da HTML5, de forma clara, em linguagem didática, mostrando vários exemplos práticos em funcionamento no site do livro (www.livrohtml5.com.br). A utilização de marcação HTML5 possibilita ao autor web alcançar os seguintes objetivos: • Criar um código totalmente semântico empregando os novos elementos da linguagem ou mesmo os elementos já existentes que tiveram sua semântica redefinida. • Usar os novos atributos da linguagem para criar elementos gráficos ricos no desenvolvimento de aplicações web. • Inserir mídia, tais como áudio e vídeo e a funcionalidade canvas de uma forma nativa, sem dependência de plugins de terceiros ou extensões proprietárias. • Desenvolver formulários altamente interativos com validação no lado do cliente com uso de atributos criados especialmente para essas finalidades. • Usar as API Geolocation, Web Storage, Web Messaging, Web Sockets e Web Workers. • Usar mecanismos, como Microdados e, ARIA para incrementar a acessibilidade.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "8575222619"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9788575222614"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 320,
+            "printType": "BOOK",
+            "categories": [
+             "Computers"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "language": "pt",
+            "previewLink": "http://books.google.com.br/books?id=ihbmXwAACAAJ&dq=isbn:9788575222614&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com.br/books?id=ihbmXwAACAAJ&dq=isbn:9788575222614&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com.br/books/about/HTML5_A_Linguagem_de_Marca%C3%A7%C3%A3o_que_Revo.html?hl=&id=ihbmXwAACAAJ"
+           },
+           "saleInfo": {
+            "country": "BR",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "BR",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com.br/books/reader?id=ihbmXwAACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "HTML5 é a linguagem de marcação que amplia de forma surpreendente as funcionalidades da HTML, alterando de maneira significativa como você desenvolve para a web."
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sat, 31 Oct 2015 14:13:46 GMT
+recorded_with: VCR 2.9.3

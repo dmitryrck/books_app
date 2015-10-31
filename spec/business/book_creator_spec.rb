@@ -124,4 +124,44 @@ describe BookCreator do
       expect(subject.image_link).to eq 'http://books.google.com.br/books/content?id=2LulngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'
     end
   end
+
+  context 'create a book by isbn without year published' do
+    before do
+      VCR.use_cassette('search-isbn-without-year-published') do
+        subject.get_attributes
+      end
+    end
+
+    let :isbn do
+      '9788575222614'
+    end
+
+    it 'should be a book' do
+      expect(subject.book).to be_a Book
+    end
+
+    it 'should be persisted' do
+      expect { subject.save }.to change { subject.book.persisted? }.to(true)
+    end
+
+    it 'should store isbn13' do
+      expect(subject.book.isbn).to eq '9788575222614'
+    end
+
+    it 'with correct title' do
+      expect(subject.title).to eq 'HTML5 - A Linguagem de Marcação que Revolucionou a Web'
+    end
+
+    it 'with correct authors' do
+      expect(subject.authors).to eq 'Maurício Samy Silva'
+    end
+
+    it 'with correct published year' do
+      expect(subject.year_published).to be_nil
+    end
+
+    it 'with correct image link' do
+      expect(subject.image_link).to be_nil
+    end
+  end
 end
