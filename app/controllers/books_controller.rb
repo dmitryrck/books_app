@@ -16,13 +16,17 @@ class BooksController < ApplicationController
       redirect_to books_path
     else
       @book = Book.new book_params
-      @book.save
+      if @book.save
+        expire_fragment 'books-index'
+      end
       respond_with @book, location: books_path
     end
   end
 
   def update
-    @book.update(book_params)
+    if @book.update(book_params)
+      expire_fragment 'books-index'
+    end
     respond_with @book, location: books_path
   end
 

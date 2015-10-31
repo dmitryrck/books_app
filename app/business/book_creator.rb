@@ -11,7 +11,9 @@ class BookCreator
   def self.create(isbn)
     creator = new(isbn)
     creator.get_attributes
-    creator.save
+    if creator.save
+      ActionController::Base.new.expire_fragment('books-index')
+    end
     creator.book
   end
 

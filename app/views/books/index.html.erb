@@ -7,19 +7,21 @@
 </div>
 
 <div class="row marketing">
-  <% @books.in_groups_of(3).each do |books| %>
-    <div class="row">
-      <% books.reject(&:nil?).each do |book| %>
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <%= image_tag book_image_url(book), alt: book %>
-            <div class="caption">
-              <h3><%= book %></h3>
-              <p><%= book.authors %>.</p>
+  <% cache 'books-index' do %>
+    <% @books.in_groups_of(3).each do |books| %>
+      <div class="row">
+        <% books.reject(&:nil?).each do |book| %>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <%= image_tag book_image_url(book), alt: book %>
+              <div class="caption">
+                <h3><%= book %></h3>
+                <p><%= book.authors %>.</p>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
-    </div>
+        <% end %>
+      </div>
+    <% end %>
   <% end %>
 </div>
