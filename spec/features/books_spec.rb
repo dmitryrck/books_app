@@ -81,7 +81,7 @@ describe 'Books' do
 
       visit edit_book_path(book)
 
-      fill_in 'ISBN', with: 'B00FY8UDSM'
+      fill_in 'ISBN', with: '1234567890'
       fill_in 'Título', with: 'Memórias Póstumas de Brás Cubas'
       fill_in 'Autor(es)', with: 'Machado de Assis'
 

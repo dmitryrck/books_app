@@ -2,6 +2,7 @@ class BookCreatorWorker
   include Sidekiq::Worker
 
   def perform(isbn, quantity = 0)
+    isbn = isbn.gsub(/\D/, '')
     creator = BookCreator.new(isbn)
     creator.get_attributes
 

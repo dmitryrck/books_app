@@ -24,6 +24,16 @@ describe Book do
     expect(subject).not_to be_valid
   end
 
+  it 'should not be valid with non-digit isbn' do
+    subject.isbn = '12-3456-789-0'
+    expect(subject).not_to be_valid
+  end
+
+  it 'should allow isbn starting with 0' do
+    subject.isbn = '0234567890'
+    expect(subject).to be_valid
+  end
+
   it 'generate to_s' do
     expect(subject.to_s).to eq 'I am Iron Man'
   end
